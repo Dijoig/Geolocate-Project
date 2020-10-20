@@ -1,0 +1,29 @@
+table {
+  border: 1px solid gray;
+  width: 70%;
+  height: 300px;
+  text-align: center;
+}
+
+table td, table th {
+  border: 1px solid gray;
+}
+
+table button {
+  border-radius: 5px;
+  color: blue;
+  background-color: bisque;
+  font-weight: bold;
+  border: 0;
+  padding: 10px;
+}
+
+#results {
+  margin-top: 50px;
+  font-size: 140%;
+  font-weight: bold;
+}
+
+#results p {
+  color: green;
+}

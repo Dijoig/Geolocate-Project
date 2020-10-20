@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Felipe de Senco">
+  <meta name="description" content="Geolocation project with three different APIs">
+  
+  <title>Geolocate HTML</title>
+  
+  <link rel="stylesheet" type="text/css" href="geolocate.css">
+  
+</head>
+<body>
+  
+  <table>
+    
+    <tr>
+      <th>API</th>
+      <th>Description</th>
+      <th></th>
+    </tr>
+      <td>GeoCodeAdress</td>
+      <td>Return the nearest address based on the coordinates given. lat: <input id="lat1" type="number" value="52.358">, lng: <input id="lng1" type="number" value="4.881"></td>
+      <td><button id="btn1">Test API</button></td>
+    <tr>
+      <td>Ocean</td>
+      <td>Return the ocean of the given coordinates. lat: <input id="lat2" type="number" value="40.78343">, lng: <input id="lng2" type="number" value="-43.96625"></td>
+      <td><button id="btn2">Test API</button></td>
+    </tr>
+    
+    <tr>
+      <td>Placename Lookup</td>
+      <td>Return a list of places for the postalcode and country given. postalcode: <input id="postal1" type="number" value="6600">, country: <input id="country1" type="text" value="AT"></td>
+      <td><button id="btn3">Test API</button></td>
+    </tr>
+     
+  </table>
+  
+  <div id="results">
+    Results:
+    <p id="first"></p>
+    <p id="second"></p>
+    <p id="third"></p>
+  </div>
+  
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="geolocate.js"></script>
+</html>
